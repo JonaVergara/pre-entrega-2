@@ -200,7 +200,7 @@ footer .redes a img {
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: repeat(2, 1fr);
         font-size: 1.4rem;
-        font-weight: bold;
+        /* font-weight: bold; */
         background: 
         linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* capa translúcida */
         url("../img/logo.png") center/contain no-repeat;
@@ -211,8 +211,7 @@ footer .redes a img {
         grid-column: span 2;
         grid-row: span 1;
         justify-self: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        
         
     }
 
@@ -221,12 +220,19 @@ footer .redes a img {
     }
 
     .sectionIndex .club {
-        grid-template-rows: 1;
         grid-row: span 1;
-        width: 80%;
-        height: 80%;
+        height: 60%;
         justify-self: center;
+        margin: 1rem;
+        padding: 0;
     }
+
+    .sectionIndex .club img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 10px 10px;
+    }
+
 
     .sectionIndex iframe {
         grid-column: span 3;
