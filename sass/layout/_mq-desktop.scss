@@ -1,0 +1,126 @@
+//variables
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as * ;
+//MQ Tablet
+@media  screen and (min-width: 1280px) {
+    //header
+    header {
+        nav {
+            div {
+                font-size: 1.3rem;
+                a {
+                    img{
+                        @include logo(160px, 145px);
+                    }
+                }
+            }
+        }
+    }
+    //Main index
+    .sectionIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        font-size: 1.4rem;
+        background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* capa translúcida */
+        url("../img/logo.png") center/contain no-repeat;
+        .qSomos {
+            grid-column: span 2;
+            grid-row: span 1;
+            justify-self: center;
+            p{
+                margin-top: 4rem;
+            }
+        }
+        .club {
+            grid-row: span 1;
+            height: 60%;
+            justify-self: center;
+            margin: 1rem;
+            padding: 0;
+            img{
+                        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 10px 10px;
+            }           
+        }
+        iframe {
+            grid-column: span 3;
+            grid-row: span 1;
+            justify-self: center;
+            width: 90% !important;            
+        }       
+    }
+
+    //Main Saff
+    .sectionStaff {
+        font-size: 1.3rem;
+        .nStaff{
+            width: 80%;
+            text-align: justify;
+            h1 {
+                margin: 4rem;
+            }
+        }
+        .tarjetas{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "c1 c2 c3"
+            "c4 c5 c6";
+            gap: 2rem;
+            justify-items: center;
+            font-size: 1.3rem;
+            .c1{
+                grid-area: c1;
+            }
+            .c2{
+                grid-area: c2;
+            }
+            .c3{
+                grid-area: c3;
+            }
+            .c4{
+                grid-area: c4;
+            }
+            .c5{
+                grid-area: c5;
+            }
+            .c6{
+                grid-area: c6;
+            }                                   
+        }
+    }
+    //Contacto
+    .sectionContacto{
+        font-size: 1.5rem;
+        font-weight: bold;
+        .contacto {
+            margin: 6rem;
+        }
+        iframe{
+            width: 65% !important;
+            height: 45rem !important;
+        }
+        form{
+            width: 40%;
+            margin: 6rem;
+        }
+    }
+    //Footer
+    footer {
+        font-size: 1.2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        .redes{
+            a{
+                img{
+                    @include logo(32px,32px);
+                }
+            }
+        }        
+    }
+}

@@ -1,341 +1,302 @@
-/* El responsive de la web en todos los html
-esta armado para movil y monitor de 1280 */
-/* Reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* Estilos Generales */
-
-/* Estilos header*/
 
 header nav div a img {
-    width: 90px;
-    height: 65px;
+  width: 90px;
+  height: 65px;
+}
+header nav ul .nav-item {
+  transition: 1s ease;
+}
+header nav ul .nav-item:hover {
+  box-shadow: 0 0 8px;
+  color: #BCD33D !important;
+}
+header nav ul .nav-item .nav-link:hover {
+  box-shadow: 0 0 8px;
+  color: #BCD33D !important;
 }
 
-/* Estilos Main */
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
+.sectionIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+.sectionIndex .club {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.sectionIndex .qSomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.sectionIndex .qSomos h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: underline #226B57;
+  color: #D06F45;
+}
+.sectionIndex .qSomos p {
+  text-align: justify;
+  padding: 0.5rem;
+}
+.sectionIndex .video {
+  width: 350px;
+  height: 250px;
 }
 
-section .club {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-
-
+.sectionStaff .nStaff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 1rem;
+}
+.sectionStaff .nStaff h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: underline #226B57;
+  color: #D06F45;
+}
+.sectionStaff .nStaff p {
+  text-align: justify;
+  padding: 0.5rem;
+}
+.sectionStaff .tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+.sectionStaff .tarjetas .card {
+  margin: 2rem;
+  transition: 2s;
+}
+.sectionStaff .tarjetas .card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 25px 25px #BCD33D;
+}
+.sectionStaff .tarjetas .card .card-img-top {
+  height: 286px;
+  object-fit: cover;
+}
+.sectionStaff .tarjetas .card .card-title {
+  color: #D06F45;
+  text-decoration: underline #226B57;
+}
+.sectionStaff .logoStaff {
+  display: none;
 }
 
-section .club img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-
+.sectionContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
-
-section .qSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+.sectionContacto .contacto h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: underline #226B57;
+  color: #D06F45;
 }
-
-section .qSomos h1 {
-   text-align: center;
-   margin-bottom: 1rem;
-   text-decoration: underline #226B57;
-   color: #D06F45;
+.sectionContacto .contacto p {
+  text-align: start;
+  padding: 0.5rem;
 }
-
-section .qSomos p {
-    text-align:justify;
-    padding: 0.5rem;
+.sectionContacto form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 5px;
+  padding-bottom: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #226B57;
+  box-shadow: 0px 0px 25px #D06F45;
 }
-
-section .video {
-    width: 95%;
-    height: 95%;
-    object-fit: cover;
+.sectionContacto form input, .sectionContacto form textarea {
+  margin: 1rem;
 }
-
-/* CSS staff */
-
-section .nStaff {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+.sectionContacto form button {
+  width: 30%;
+  border: #D06F45 solid;
+  background-color: #D06F45;
+  color: #226B57;
+  align-self: center;
 }
-
-section .nStaff h1 {
-   text-align: center;
-   margin-bottom: 1rem;
-   text-decoration: underline #226B57;
-   color: #D06F45;
-}
-
-section .qStaff p {
-    text-align:justify;
-    padding: 0.5rem;
-}
-
-
-section .tarjetas .card {
-    margin: 2rem;
-}
-
-.card-img-top {
-    height: 286px;
-    object-fit: cover;
-}
-
-.card-title {
-    color: #D06F45;
-    text-decoration: underline #226B57;
-}
-
-.logoStaff {
-    display: none;
-}
-
-/* Aca termina el section de Staff */
-
-/* Css contacto */
-
-section .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-
-section .contacto h1 {
-   text-align: center;
-   margin-bottom: 1rem;
-   text-decoration: underline #226B57;
-   color: #D06F45;
-}
-
-section .contacto p {
-    text-align:start;
-    padding: 0.5rem;
-}
-
-section .map {
-    width: 95%;
-    height: 90%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 5px;
-    margin-top: 1rem ;
-    margin-bottom: 1rem;
-    border-radius: 15px;
-    border: #D06F45 solid;
-    background-color: #226B57;
-    
-}
-
-form input, textarea {
-    margin: 1rem;
-}
-
-
-form button {
-    width: 50%;
-    border-radius: 15px;
-    border: #D06F45 solid;
-    background-color: #D06F45;
-    color: #226B57;
-    align-self: center;
-}
-
-/* Aca termina el CSS de contacto */
 
 footer {
-    background-color: #226B57 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-top: 3px solid #D06F45;
-    color: #D06F45;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #226B57;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 3px solid #D06F45;
+  color: #D06F45;
 }
-
 footer .redes a img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
-/* MQ Desktop */
-
+@media screen and (min-width: 769px) {
+  header nav div {
+    font-size: 1.4rem;
+  }
+  header nav div a img {
+    width: 130px;
+    height: 100px;
+  }
+  .sectionIndex {
+    font-size: 1.3rem;
+  }
+  .sectionIndex .video {
+    width: 700px;
+    height: 600px;
+  }
+  .sectionStaff {
+    font-size: 1.3;
+  }
+  .sectionStaff .nStaff {
+    width: 80%;
+    justify-self: center;
+  }
+  .sectionStaff .tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sectionContacto {
+    font-size: 1.2rem;
+  }
+  .sectionContacto .map {
+    width: 600px;
+    height: 500px;
+  }
+  .sectionContacto form {
+    width: 50%;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+  footer .redes a img {
+    width: 28px;
+    height: 28px;
+  }
+}
 @media screen and (min-width: 1280px) {
-
-    header nav div {
-        font-size: 1.3rem;
-    }
-
-    header nav div a img {
-        width: 160px;
-        height: 145px;
-    }
-
-    /* main index */
-
-    .sectionIndex {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: repeat(2, 1fr);
-        font-size: 1.4rem;
-        /* font-weight: bold; */
-        background: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* capa translúcida */
-        url("../img/logo.png") center/contain no-repeat;
-
-    }
-
-    .sectionIndex .qSomos {
-        grid-column: span 2;
-        grid-row: span 1;
-        justify-self: center;
-        
-        
-    }
-
-    .sectionIndex .qSomos p {
-        margin-top: 4rem;
-    }
-
-    .sectionIndex .club {
-        grid-row: span 1;
-        height: 60%;
-        justify-self: center;
-        margin: 1rem;
-        padding: 0;
-    }
-
-    .sectionIndex .club img {
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px 10px 10px 10px;
-    }
-
-
-    .sectionIndex iframe {
-        grid-column: span 3;
-        grid-row: span 1;
-        justify-self: center;
-        width: 90%;
-
-    }
-
-    /* Main  Staff */
-
-    .sectionStaff {
-        font-size: 1.3rem;
-    }
-
-    .sectionStaff .nStaff {
-        width: 80%;
-        text-align: justify;
-    }
-
-    .sectionStaff .nStaff h1 {
-        margin: 4rem;
-    }
-
-    .sectionStaff .tarjetas {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "c1 c2 c3"
-        "c4 c5 c6";
-        gap: 2rem;
-        
-    }
-
-    .tarjetas .c1 {
-        grid-area: c1;
-    }
-
-    .tarjetas .c2 {
-        grid-area: c2;
-    }
-    
-    .tarjetas .c3 {
-        grid-area: c3;
-    }
-    
-    .tarjetas .c4 {
-        grid-area: c4;
-    }
-    
-    .tarjetas .c5 {
-        grid-area: c5;
-    }
-
-    .tarjetas .c6 {
-        grid-area: c6;
-    } 
-    
-    /* Termina el CSS de Staff */
-
-    /* CSS contacto */
-    .sectionContacto {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .sectionContacto .contacto {
-        margin: 6rem;
-    }
-    .sectionContacto iframe {
-
-        width: 65%;
-        height: 45rem;
-    }
-
-    .sectionContacto form {
-        width: 40%;
-        margin: 6rem;
-    }
-
-
-    /* Footer */
-
-    footer {
-        font-size: 1.2rem;
-        flex-direction: row;
-        justify-content: space-between;
-    
-    }
-
-
-    footer .redes a img {
-        width: 32px;
-        height: 32px;
-    }
-
-
+  header nav div {
+    font-size: 1.3rem;
+  }
+  header nav div a img {
+    width: 160px;
+    height: 145px;
+  }
+  .sectionIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 1.4rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/logo.png") center/contain no-repeat;
+  }
+  .sectionIndex .qSomos {
+    grid-column: span 2;
+    grid-row: span 1;
+    justify-self: center;
+  }
+  .sectionIndex .qSomos p {
+    margin-top: 4rem;
+  }
+  .sectionIndex .club {
+    grid-row: span 1;
+    height: 60%;
+    justify-self: center;
+    margin: 1rem;
+    padding: 0;
+  }
+  .sectionIndex .club img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .sectionIndex iframe {
+    grid-column: span 3;
+    grid-row: span 1;
+    justify-self: center;
+    width: 90% !important;
+  }
+  .sectionStaff {
+    font-size: 1.3rem;
+  }
+  .sectionStaff .nStaff {
+    width: 80%;
+    text-align: justify;
+  }
+  .sectionStaff .nStaff h1 {
+    margin: 4rem;
+  }
+  .sectionStaff .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "c1 c2 c3" "c4 c5 c6";
+    gap: 2rem;
+    justify-items: center;
+    font-size: 1.3rem;
+  }
+  .sectionStaff .tarjetas .c1 {
+    grid-area: c1;
+  }
+  .sectionStaff .tarjetas .c2 {
+    grid-area: c2;
+  }
+  .sectionStaff .tarjetas .c3 {
+    grid-area: c3;
+  }
+  .sectionStaff .tarjetas .c4 {
+    grid-area: c4;
+  }
+  .sectionStaff .tarjetas .c5 {
+    grid-area: c5;
+  }
+  .sectionStaff .tarjetas .c6 {
+    grid-area: c6;
+  }
+  .sectionContacto {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .sectionContacto .contacto {
+    margin: 6rem;
+  }
+  .sectionContacto iframe {
+    width: 65% !important;
+    height: 45rem !important;
+  }
+  .sectionContacto form {
+    width: 40%;
+    margin: 6rem;
+  }
+  footer {
+    font-size: 1.2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .redes a img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-    
-
-
+/*# sourceMappingURL=main.css.map */
